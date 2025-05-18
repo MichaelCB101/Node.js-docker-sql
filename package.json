@@ -2,11 +2,26 @@
   "name": "node.js-docker-sql",
   "version": "1.0.0",
   "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "start": "ts-node src/server.ts", 
+  "build": "tsc",
+  "serve": "node dist/server.js",
+  "test": "echo \"Add test script here later\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.18",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
 }
